@@ -1,5 +1,6 @@
 # rust
 
+0. `cargo new rust`
 1. add the `bindgen` crate to your project's `cargo.toml`
 ```toml
 [build-dependencies]
@@ -11,3 +12,4 @@ bindgen = "0.66.1"
 include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
 ```
 4. use `C` functions within `unsafe {}` code blocks
+5. `cargo build` and `cargo run`
