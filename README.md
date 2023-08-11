@@ -1,22 +1,19 @@
 # Programming Languages with C Interoperability
 
-Using existing `C` files (`peekpoke.c` and `peekpoke.h`) within other programming laguages.
+Using existing `C` files (`./c/peekpoke.c` and `./c/peekpoke.h`) within other programming laguages.
 
 ## Low Level Programming Languages
 
-### industry standard
-- c/c++
-
-### best alternatives
-- rust
-- go
-
-#### not ready yet
-- zig
-- nim
-
-#### honorable mentions
-- lua
-- elixir
-- haskell
-- ocaml
+- industry standard
+    - c++
+- best alternatives
+    - rust
+    - go
+    - lua
+- honorable mentions
+    - elixir
+    - haskell
+    - ocaml
+- not ready yet
+    - zig
+    - nim
