@@ -3,7 +3,7 @@ const lib = @cImport({
     @cInclude("./../c/peekpoke.h");
 });
 
-pub fn main() !void {
+pub fn main() anyerror!void {
     const stdout = std.io.getStdOut().writer();
     const address = 0;
 
