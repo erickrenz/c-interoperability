@@ -1,3 +1,5 @@
 rust/target
 *.so
 *.o
+zig/zig-cache
+zig/zig-out

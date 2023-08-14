@@ -24,7 +24,7 @@ unsigned peek(unsigned addr) {
 
   ptr = mmap(NULL, page_size, PROT_READ, MAP_SHARED, fd,
              (addr & ~(page_size - 1)));
-  if (ptr == (caddr_t) -1) {
+  if (ptr == (void*) -1) {
     perror("peekpoke");
     exit(EXIT_FAILURE);
   }
@@ -49,7 +49,7 @@ void poke(unsigned addr, unsigned value) {
 
   ptr = mmap(NULL, page_size, PROT_READ | PROT_WRITE, MAP_SHARED, fd,
              (addr & ~(page_size - 1)));
-  if (ptr == (caddr_t) -1) {
+  if (ptr == (void*) -1) {
     perror("peekpoke");
     exit(EXIT_FAILURE);
   }
