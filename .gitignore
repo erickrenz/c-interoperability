@@ -3,3 +3,4 @@ rust/target
 *.o
 zig/zig-cache
 zig/zig-out
+.DS_Store
